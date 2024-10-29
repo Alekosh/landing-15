@@ -1,0 +1,44 @@
+@import "./index"; // получаем все файлы
+
+html,
+body {
+	// font-size: 10px;
+	scroll-behavior: smooth;
+	&.lock .menu__body {
+		display: block;
+	}
+}
+body {
+	font-family: $ff-OpenSans;
+	background: #FFFFFF;
+	&._lock {
+		overflow: hidden;
+	}
+}
+.container {
+	max-width: 1140px; //1110px + 30padding = 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+h1 {
+	font-size: 6em;
+} //64px
+h2 {
+	font-size: 4em;
+} //50px
+
+// .justify-content{
+// 	width: calc(100% / 3);
+// }
+
+.hidden {
+	display: none;
+}
+
+svg *[fill] {fill: currentColor}
+svg *[stroke] {stroke: currentColor}
+// =========
