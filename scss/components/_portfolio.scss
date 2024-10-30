@@ -1,0 +1,8 @@
+.portfolio{
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  .portfolio__img{
+    width: calc(100% / 4);
+  }
+}

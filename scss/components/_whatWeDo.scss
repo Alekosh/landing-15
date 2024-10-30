@@ -1,0 +1,32 @@
+.whatWeDo {
+  margin-top: clamp(1.875rem, calc(-0.852rem + 13.64vw), 9.375rem);
+}
+.whatWeDo__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 66px;
+}
+.whatWeDo__blocks {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.whatWeDo__card {
+  padding: 59px 86px;
+  max-width: 350px;
+  background: #F7F7F7;
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  h4{
+    font-size: 2.1em;
+  }
+  img{
+    min-width: 60px;
+    min-height: 40px;
+  }
+}
