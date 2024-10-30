@@ -1,0 +1,80 @@
+.answer {
+  margin-top: 150px;
+}
+.answer__title {
+  h2{
+    font-size: 3.4em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: $fw-medium;
+    margin-bottom: 50px;
+  }
+}
+.answer__accardion {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.accordion {
+  color: $accent-color;
+  font-size: 2.4em;
+  font-weight: $fw-medium;
+}
+.accordion-content {
+  font-size: 1.6em;
+  color: $gray;
+  max-width: 730px;
+}
+// ===================
+button.accordion {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  text-align: left;
+  padding: 1rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+button.accordion:before {
+  content: '';
+  background: url('../../img/arrow.svg') no-repeat;
+  float: left;
+  width: 15px;
+  height: 15px;
+}
+
+button.accordion.active:before {
+  content: '';
+  background: url('../../img/arrow.svg') no-repeat;
+  float: left;
+  width: 15px;
+  height: 15px;
+  transform: rotate(90deg);
+  transition: .2s ease-in;
+}
+
+button.accordion:hover,
+button.accordion.active {
+  background-color: #ddd;
+}
+
+.accordion-content {
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.2s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
+  padding: 0 20px;
+}
+
+.accordion.active ~ .accordion-content {
+  max-height: 300px;
+  padding: 20px;
+}
+
