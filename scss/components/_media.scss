@@ -1,127 +1,37 @@
-// Малые девайсы («ландшафтные телефоны», >= 576px)
-@media (max-width: 576px) { 
-  .second__cubes{
-    flex-direction: column;
-    align-items: center;
-  }
-  // =======
-  .time__blocks{
-    .schedule-table th {
-      width: 0px;
-      height: 0px;
-    }
-    .schedule-table td {
-      padding: 0 !important;
-      // display: none;
-    }
-    .schedule-table {
-      margin-top: 168px;
-    }
-  }
-  // .time {display: none;}
-  // ==================
-  .price__card{
-    width: 80%;
-  }
-  .price__cards{
-    align-items: center
-  }
-  .price__temp{
-    .btn{
-      font-size: 12px;
-      padding: 6px 12px;
-    }
-  }
-}
-
-// Средние девайсы («таблетки», >= 768px)
-@media (max-width: 768px) { 
-  .class .class__blocks .swiper, swiper-wrapper {
-    width: 100%;
-  }
-  .class__blocks{
-    flex-direction: column;
-  }
-  // ===========
-  .second__list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .second__cubes{
-    justify-content: center;
-  }
-  // ============
-  .trainer__cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    // grid-template-columns: repeat(2, 1fr);
-
-  }
-  // =============
-
-  .schedule-table {
-    transform: rotate(90deg);
-    position: relative;
-    margin-top: 200px;
-    span{
-      font-weight: 700;
-    }
-  }
-  .schedule-table td {
-    padding: 10px 20px;
-  }
-  // =========
-  .price__cards{
-    flex-direction: column;
-  }
-  // ===========
-  .calculate__blocks{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .calc__temp{
-    flex-direction: column;
-  }
-}
-
-// Большие девайсы (десктопы, >= 992px)
-@media (max-width: 992px) {
-  .hero__text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    // padding-top: 200px;
-    // padding-bottom: 237px;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .header{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  // ================
-  .about__blocks{
-    flex-direction: column-reverse;
-  }
-  // ==================
-  .second__block{
-    flex-direction: column;
-    align-items: center;
-  }
-  // =============
-  .footer__blocks{
-    flex-wrap: wrap;
-    
-  }
-}
-
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
-  .price__blocks{
-    flex-direction: column;
+  .header__blocks{
+    width: 900px;
   }
-
 }
+// Большие девайсы (десктопы, >= 992px)
+@media (max-width: 992px) {
+  .header__blocks{
+    width: 700px;
+  }
+  .header__title{
+    margin-top: 0;
+    top: 35%;
+    position: absolute;
+  }
+}
+// Средние девайсы («таблетки», >= 768px)
+@media (max-width: 768px) { 
+  .header__blocks{
+    width: 500px;
+  }
+  
+}
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (max-width: 576px) { 
+  .header__blocks{
+    width: auto;
+    padding: 10px 15px;
+    gap: 20px;
+  }
+  .ourProject__card {
+    max-width: 300px;
+  }
+}
+
+
